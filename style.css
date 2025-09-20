@@ -1,0 +1,97 @@
+/* --- Reset and Base Styles --- */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+
+header {
+
+  position: fixed; top: 0; left: 0; width: 100%;
+
+  background: #222; color: #fff; padding: 15px 30px;
+
+  display: flex; justify-content: space-between; align-items: center;
+
+  z-index: 1000;
+
+}
+
+header h1 { font-size: 20px; }
+
+nav ul { list-style: none; display: flex; gap: 20px; }
+
+nav ul li a { color: #fff; text-decoration: none; transition: 0.3s; }
+
+nav ul li a:hover { color: #f39c12; }
+
+section { padding: 80px 20px; min-height: 100vh; }
+
+#home {
+
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+
+  background: linear-gradient(to right, #f39c12, #d35400); color: #fff;
+
+}
+
+#home h2 { font-size: 40px; margin-bottom: 10px; }
+
+#home p { font-size: 20px; }
+
+#about, #skills, #projects, #contact { max-width: 1000px; margin: auto; }
+
+#about h2, #skills h2, #projects h2, #contact h2 {
+
+  text-align: center; margin-bottom: 20px; font-size: 30px;
+
+}
+
+#skills ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; text-align: center; }
+
+#skills li { background: #eee; padding: 15px; border-radius: 8px; }
+
+.projects-grid {
+
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+
+}
+
+.project-card {
+
+  background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  transition: transform 0.3s;
+
+}
+
+.project-card:hover { transform: translateY(-5px); }
+
+form { display: flex; flex-direction: column; gap: 10px; }
+
+input, textarea {
+
+  padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%;
+
+}
+
+button {
+
+  background: #f39c12; color: #fff; border: none; padding: 10px;
+
+  border-radius: 5px; cursor: pointer; transition: background 0.3s;
+
+}
+
+button:hover { background: #d35400; }
+
+footer {
+
+  text-align: center; padding: 20px; background: #222; color: #fff;
+
+}
+
+/* Smooth scrolling */
+
+html { scroll-behavior: smooth; }
